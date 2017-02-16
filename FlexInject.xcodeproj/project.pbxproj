@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B0461631E557E2300EC53A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0461621E557E2300EC53A1 /* Foundation.framework */; };
+		0B0461651E557E2300EC53A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0461641E557E2300EC53A1 /* UIKit.framework */; };
+		0B04616F1E557E2300EC53A1 /* FlexInject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B04616E1E557E2300EC53A1 /* FlexInject.h */; };
+		0B0461711E557E2300EC53A1 /* FlexInject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0461701E557E2300EC53A1 /* FlexInject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B04615F1E557E2300EC53A1 /* libFlexInject.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFlexInject.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B0461621E557E2300EC53A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B0461641E557E2300EC53A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B0461691E557E2300EC53A1 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		0B04616A1E557E2300EC53A1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0B04616C1E557E2300EC53A1 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0B04616D1E557E2300EC53A1 /* FlexInject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlexInject-Prefix.pch"; sourceTree = "<group>"; };
+		0B04616E1E557E2300EC53A1 /* FlexInject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexInject.h; sourceTree = "<group>"; };
+		0B0461701E557E2300EC53A1 /* FlexInject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexInject.m; sourceTree = "<group>"; };
+		0B0461741E557E2300EC53A1 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B04615B1E557E2300EC53A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0461631E557E2300EC53A1 /* Foundation.framework in Frameworks */,
+				0B0461651E557E2300EC53A1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B0461551E557E2300EC53A1 = {
+			isa = PBXGroup;
+			children = (
+				0B0461661E557E2300EC53A1 /* FlexInject */,
+				0B0461611E557E2300EC53A1 /* Frameworks */,
+				0B0461601E557E2300EC53A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B0461601E557E2300EC53A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B04615F1E557E2300EC53A1 /* libFlexInject.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B0461611E557E2300EC53A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B0461621E557E2300EC53A1 /* Foundation.framework */,
+				0B0461641E557E2300EC53A1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B0461661E557E2300EC53A1 /* FlexInject */ = {
+			isa = PBXGroup;
+			children = (
+				0B04616E1E557E2300EC53A1 /* FlexInject.h */,
+				0B0461701E557E2300EC53A1 /* FlexInject.m */,
+				0B0461671E557E2300EC53A1 /* Package */,
+				0B04616B1E557E2300EC53A1 /* Supporting Files */,
+			);
+			path = FlexInject;
+			sourceTree = "<group>";
+		};
+		0B0461671E557E2300EC53A1 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0B0461681E557E2300EC53A1 /* DEBIAN */,
+				0B0461721E557E2300EC53A1 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0B0461681E557E2300EC53A1 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0B0461691E557E2300EC53A1 /* control.txt */,
+				0B04616A1E557E2300EC53A1 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0B04616B1E557E2300EC53A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B04616C1E557E2300EC53A1 /* PackageVersion.plist */,
+				0B04616D1E557E2300EC53A1 /* FlexInject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B0461721E557E2300EC53A1 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				0B0461731E557E2300EC53A1 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		0B0461731E557E2300EC53A1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0B0461741E557E2300EC53A1 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B04615C1E557E2300EC53A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B04616F1E557E2300EC53A1 /* FlexInject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B04615E1E557E2300EC53A1 /* FlexInject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B0461771E557E2300EC53A1 /* Build configuration list for PBXNativeTarget "FlexInject" */;
+			buildPhases = (
+				0B04615A1E557E2300EC53A1 /* Sources */,
+				0B04615B1E557E2300EC53A1 /* Frameworks */,
+				0B04615C1E557E2300EC53A1 /* Headers */,
+				0B04615D1E557E2300EC53A1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexInject;
+			productName = FlexInject;
+			productReference = 0B04615F1E557E2300EC53A1 /* libFlexInject.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B0461561E557E2300EC53A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					0B04615E1E557E2300EC53A1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0B0461591E557E2300EC53A1 /* Build configuration list for PBXProject "FlexInject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B0461551E557E2300EC53A1;
+			productRefGroup = 0B0461601E557E2300EC53A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B04615E1E557E2300EC53A1 /* FlexInject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B04615D1E557E2300EC53A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B04615A1E557E2300EC53A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0461711E557E2300EC53A1 /* FlexInject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B0461751E557E2300EC53A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0B0461761E557E2300EC53A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0B0461781E557E2300EC53A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlexInject/FlexInject-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0B0461791E557E2300EC53A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlexInject/FlexInject-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B0461591E557E2300EC53A1 /* Build configuration list for PBXProject "FlexInject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B0461751E557E2300EC53A1 /* Debug */,
+				0B0461761E557E2300EC53A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B0461771E557E2300EC53A1 /* Build configuration list for PBXNativeTarget "FlexInject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B0461781E557E2300EC53A1 /* Debug */,
+				0B0461791E557E2300EC53A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B0461561E557E2300EC53A1 /* Project object */;
+}
